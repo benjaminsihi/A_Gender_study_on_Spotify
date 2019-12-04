@@ -21,17 +21,19 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'gender study on Spotify', // Title for your website.
+  title: 'Gender study on Spotify', // Title for your website.
   tagline: 'A gender study',
-  url: 'https://github.com/benjaminsihi/', // Your website URL
+  url: 'https://benjaminsihi.github.io', // Your website URL
   baseUrl: '/A_Gender_study_on_Spotify/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
-
   // Used for publishing and more
-  projectName: 'gender-study',
-  organizationName: 'info-402-7',
+  
+  
+  
+  projectName: 'A_Gender_study_on_Spotify',
+  organizationName: 'benjaminsihi',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -39,23 +41,22 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {page: 'help', label: 'Help'}
   ],
+  
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/spotify-icon.png',
+  footerIcon: 'img/spotify-icon.png',
+  favicon: 'img/spotify-icon.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#8d964b',
-    secondaryColor: '#626934',
+    primaryColor: '#1db954',
+    secondaryColor: '#1ed760',
   },
 
   /* Custom fonts for website */
@@ -73,7 +74,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} benjamin_shi`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -105,6 +106,17 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
+
+  // Show documentation's last update time.
+  enableUpdateTime: true,
+
+  // change to boolean value here to toggle the sideBarNavigation
+  // turn it true, the navigation bar will collapse and move up. 
+  docsSideNavCollapsible: true,
+
+  // Set this to `true` if you want to enable the scroll to top 
+  // button at the bottom of your site.
+  scrollToTop: true,
 };
 
 module.exports = siteConfig;
