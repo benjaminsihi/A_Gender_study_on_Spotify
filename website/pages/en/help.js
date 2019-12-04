@@ -21,19 +21,19 @@ function Help(props) {
 
   const supportLinks = [
     {
-      content: `Learn more using the [documentation on this site.](${docUrl(
+      content: `Learn more using the [introduction doc](${docUrl(
         'doc1.html',
       )})`,
-      title: 'Browse Docs',
+      title: 'Quick start',
     },
     {
-      content: 'Ask questions about the documentation and project',
-      title: 'Join the community',
+      content: `Read the essay on the [technical walkthrough method](${siteConfig.walkthrough_method})`,
+      title: 'Walkthrough Method',
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
-    },
+      content: `Learn more about [terms and conditions](${siteConfig.terms}) Spotify has`,
+      title: 'Terms and conditions',
+    }
   ];
 
   return (
@@ -41,10 +41,9 @@ function Help(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Need help?</h1>
+            <h1>Need more resources?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
+          <GridBlock contents={supportLinks} layout="threeColumn"/>
         </div>
       </Container>
     </div>

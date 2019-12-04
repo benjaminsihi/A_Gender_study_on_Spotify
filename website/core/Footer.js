@@ -38,38 +38,28 @@ class Footer extends React.Component {
           <div>
             <h5>Docs</h5>
             <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+              Research Introduction
             </a>
             <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
-            </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+              Research proposal
             </a>
           </div>
           <div>
             <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+            <a href={this.pageUrl('help.html', this.props.language)}>
+              Resources
             </a>
             <a
-              href="https://stackoverflow.com/questions/tagged/"
-              target="_blank"
+              href="https://journals.sagepub.com/doi/abs/10.1177/1461444816675438"
               rel="noreferrer noopener">
-              Stack Overflow
+              Technical Walkthrough method
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
-            </a>
+            <a href="https://mitpress.mit.edu/books/recoding-gender">Recoding gender</a>
+            <a href="https://nyupress.org/9781479837243/algorithms-of-oppression/">Algorithms of Oppression</a>
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/benjaminsihi/A_Gender_study_on_Spotify">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}

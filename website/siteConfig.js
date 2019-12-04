@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Gender study on Spotify', // Title for your website.
-  tagline: 'A gender study',
+  title: 'A study on Spotify', // Title for your website.
+  tagline: 'Music Gender Diversity',
   url: 'https://benjaminsihi.github.io', // Your website URL
   baseUrl: '/A_Gender_study_on_Spotify/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -41,7 +41,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {page: 'help', label: 'Help'}
+    {page: 'help', label: 'Resource'}
   ],
   
 
@@ -117,6 +117,11 @@ const siteConfig = {
   // Set this to `true` if you want to enable the scroll to top 
   // button at the bottom of your site.
   scrollToTop: true,
+
+  walkthrough_method : "https://journals.sagepub.com/doi/abs/10.1177/1461444816675438",
+
+  terms : "https://www.spotify.com/us/legal/end-user-agreement/",
+
 };
 
 module.exports = siteConfig;

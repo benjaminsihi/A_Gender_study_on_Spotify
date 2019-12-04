@@ -60,13 +60,12 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="#try">Quotes</Button>
+            <Button href={docUrl('doc1.html')}>Overview</Button>
+            <Button href={docUrl('doc2.html')}>Proposal</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -102,49 +101,71 @@ class Index extends React.Component {
     );
 
     const TryOut = () => (
-      <Block id="try">
+      <Block id="try" >
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
+              'As long as we define social life as the sum total of conscious and deliberate individual activities, then only individual ' +
+              'manifestations of personal prejudice and hostility will be seen as racist. Systemic, collective, and coordinated behavior ' +
+              'disappears from sight. Collective exercises of group power relentlessly channeling rewards, resources, and opportunities from'  + 
+              'one group to another will not appear to be “racist” from this perspective because they rarely announce their intention to discriminate ' +
+              'against individuals. But they work to construct racial identities by giving people of different races vastly different life chances. ———— Safiya Noble',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
-          },
-        ]}
-      </Block>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
+            title: '\"Algorithms of Oppression\"',
           },
         ]}
       </Block>
     );
 
     const LearnHow = () => (
-      <Block background="light">
+      <Block background="light" id='noTop'>
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'There is little common or stereotypical about the women who make their careers in computing' + 
+              'We are from all walks of life. We are all types of people. Whatever else, we are drawn to the challenges' +
+               'presented by computing, by the thrill of solving problems, by the speed, power and complexity and potential' +
+               'of the machines we create and use —— Anita Borg, 1994',
+            image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: '\"Recoding Gender\"',
           },
         ]}
       </Block>
     );
 
+    const Description = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'I was hired as a programmer ... It was something that women were believed to be good at.' + 
+              ' ———— Fran Allen, hired by IBM in 1957',
+            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+            imageAlign: 'right',
+            title: '\"Recoding Gender\"',
+          },
+        ]}
+      </Block>
+    );
+
+    const Quote = () => (
+      <Block id="try" >
+        {[
+          {
+            content:
+              'Since the first edition of Library of Congress Subject Headings appeared 60 years ago, American and other libraries' +
+              'have increasingly relied on this list as the chief authority—if not the sole basis—for subject cataloging. There can be' +
+              'no quarrel about the practical necessity for such labor-saving, worry-reducing work, nor—abstractly—about its value as a ' +
+              'global standardizing agent, as a means for achieving some uniformity in an area that would otherwise be chaotic. ———— Safiya Noble',
+            image: `${baseUrl}img/undraw_operating_system.svg`,
+            imageAlign: 'left',
+            title: '\"Algorithms of Oppression\"',
+          },
+        ]}
+      </Block>
+    );
     const Features = () => (
       <Block layout="fourColumn">
         {[
@@ -196,12 +217,14 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
+        <div className='header_cloud'>
+          <img src={`${baseUrl}img/Artboard 1v-1.svg`} alt="dress cloud" />
+        </div>
         <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
           <LearnHow />
           <TryOut />
           <Description />
+          <Quote/>
         </div>
       </div>
     );

@@ -21,3 +21,39 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+.header_cloud{
+    margin-top: -290px;
+}
+
+.homeWrapper, .projectTitle {
+    color : #e8e8e8;
+}
+
+.homeContainer {
+    /* background-image: linear-gradient(180deg,#3e30b0, #4a72cf); */
+    /* header color theme: verson 1 */
+    /* background-color: #3366cc; */
+
+    /* header color theme: version 2 */
+    background-color: #1db954;
+}
+
+.homeWrapper .button {
+    border: 1px solid white;
+    color : #e8e8e8;
+    margin-right: 10px;
+}
+
+.projectTitle{
+    font-size: 350%;
+}
+.homeWrapper .button {
+    border: 1px solid white;
+    color : #e8e8e8;
+    margin-right: 10px;
+}
+
+#noTop {
+    margin-top: -40px;
+}
